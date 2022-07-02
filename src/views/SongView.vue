@@ -71,9 +71,7 @@ const handleSubmit = () => {
         }catch (error) {
             alert('Error');
         };
-    }else{
-        alert('No funciona');
-    };
+    }
 };
 
 </script>

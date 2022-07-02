@@ -49,10 +49,7 @@ const handleSubmit = () => {
             alert('Error')
         };
 
-    }else{
-        alert('No funciona');
-    };
-
+    }
 };
 
 </script>
