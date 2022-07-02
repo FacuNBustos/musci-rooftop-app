@@ -46,12 +46,10 @@
         </div>
 
         <FooterView />
-<LetraView/>
     </div>
 </template>
 
 <script setup>
-import FooterView from "../components/FooterView.vue";
 import CardLyric from "../components/SongView/CardLyric.vue";
 import filtroSearch from "../services/filtroSearch.service";
 import searchMusic from "../services/music.service";
