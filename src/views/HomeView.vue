@@ -8,11 +8,13 @@
 
                 <div class="flex justify-center items-center">
 
-                    <input type="text" class="text-center text-xl w-[400px] h-[40px] border-y border-l border-gray-400 rounded-l-lg"  placeholder="Búsqueda"/>
-                    <button class="h-full  border-y border-r border-gray-400 rounded-r-lg
+                    <input type="text" id='musicLyric' class="text-center text-xl w-[400px] h-[40px] border-y border-l border-gray-400 rounded-l-lg"  placeholder="Búsqueda"/>
+
+                    <button class="h-full  border-y border-r p-1 border-gray-400 rounded-r-lg
                     hover:bg-gray-200
-                    active:bg-gray-400">
-                    <img class="w-[25px] p-1 fill-blue-500" src="../assets/lupa.svg"/>
+                    active:bg-gray-400"
+                    @click="handleSubmit">
+                        <img class="w-[25px] p-1 fill-blue-500" src="../assets/lupa.svg"/>
                     </button>
 
                 </div>
@@ -27,9 +29,28 @@
 </template>
 
 <script setup>
-import FooterView from './FooterView.vue';
-import LetraView from './LetraView.vue';
-    // <input type="text" id="name" name="name" required class="text-center pr-[200px] pt-3 border border-black">
 
-    // <img class="w-[20%] " src="../assets/logo.gif">
+import FooterView from '../components/FooterView.vue';
+import filtroSearch from '../services/filtroSearch.service';
+import searchMusic from '../services/music.service';
+import store from '../store';
+
+const handleSubmit = () => {
+
+    const music = document.querySelector('#musicLyric').value;
+    const query = filtroSearch(music);
+
+    if (query) {
+
+        try{
+            searchMusic(query)
+                .then(response => store.dispatch('handleChangeLyric', response));
+
+        }catch (error) {
+            alert('Error')
+        };
+
+    }
+};
+
 </script>
