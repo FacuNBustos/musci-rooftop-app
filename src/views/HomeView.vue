@@ -21,13 +21,14 @@
         </main>
 
         <FooterView />
-
+        
     </div>
 
 </template>
 
 <script setup>
 import FooterView from './FooterView.vue';
+import LetraView from './LetraView.vue';
     // <input type="text" id="name" name="name" required class="text-center pr-[200px] pt-3 border border-black">
 
     // <img class="w-[20%] " src="../assets/logo.gif">

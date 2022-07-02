@@ -13,17 +13,20 @@
             </button>
 
         </nav>
-        <div class="w-full h-full bg-red-200">
-
+        <div class="w-full h-full  flex flex-row  justify-center ">
+            <div class="w-[35%] h-[200px] item-align-center bg-gray-200 drop-shadow-2xl">
+                
+            </div>
         </div>
 
         <FooterView />
-
+<LetraView/>
     </div>
 </template>
 
 <script setup>
 import FooterView from "./FooterView.vue";
+import LetraView from "./LetraView.vue";
 
 // 
 
