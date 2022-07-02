@@ -23,12 +23,13 @@
         </main>
 
         <FooterView />
-
+        
     </div>
 
 </template>
 
 <script setup>
+
 import FooterView from '../components/FooterView.vue';
 import filtroSearch from '../services/filtroSearch.service';
 import searchMusic from '../services/music.service';

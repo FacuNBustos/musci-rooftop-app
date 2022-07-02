@@ -43,11 +43,10 @@
                 </div>
             </div>
             
-
         </div>
 
         <FooterView />
-
+<LetraView/>
     </div>
 </template>
 
