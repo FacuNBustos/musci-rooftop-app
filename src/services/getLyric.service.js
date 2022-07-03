@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const searchMusic = async (artista, title) => {
+const getLyric = async (artista, title) => {
 
     try{
         const response = await axios.get(`https://api.lyrics.ovh/v1/${artista}/${title}`);
@@ -12,4 +12,4 @@ const searchMusic = async (artista, title) => {
     };
 };
 
-export default searchMusic;
+export default getLyric;
