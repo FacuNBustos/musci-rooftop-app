@@ -4,7 +4,7 @@
 
         <div class="flex flex-row justify-center items-center w-full h-[50%] gap-4 text-sm text-gray-500">
             <a href="">Acerca de nosotros</a>
-            <a href="https://github.com/FacuNBustos/musci-rooftop-app">Github</a>
+            <a href="https://github.com/FacuNBustos/musci-rooftop-app" target="_blanck">Github</a>
             <a href="https://rooftop.dev/" target="_blanck">Agradecimientos</a>
         </div>
             
