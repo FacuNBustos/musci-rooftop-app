@@ -25,21 +25,21 @@
 
         <div class="flex flex-col items-center w-full h-[91vh] pt-[95px]">
 
-            <div class="flex w-[98vw] justify-start" v-if="this.$store.state.lyrics">
-                <label class="text-sm font-roboto text-gray-500">La busqueda "{{this.$store.state.search}}" obtuvo {{this.$store.state.lyrics.recordings.length}} resutados.</label>
+            <div class="flex w-[98vw] justify-start" v-if="$store.state.lyrics">
+                <label class="text-sm font-roboto text-gray-500">La busqueda "{{$store.state.search}}" obtuvo {{$store.state.lyrics.recordings.length}} resutados.</label>
             </div>
-            <div class="w-full border-t border-gray-300 mb-1" v-if="this.$store.state.lyrics"></div>
+            <div class="w-full border-t border-gray-300 mb-1" v-if="$store.state.lyrics"></div>
 
             <div class="w-full h-full flex-grow overflow-auto">
 
-                <CardLyric v-for="elem in this.$store.state.lyrics.recordings" :lyric='elem' v-if="this.$store.state.lyrics"/>
+                <CardLyric v-for="elem in $store.state.lyrics.recordings" :lyric='elem' v-if="$store.state.lyrics"/>
         
             </div>
             
         </div>
 
         <FooterView />
-        <LyricView v-if="this.$store.state.helper"/>
+        <LyricView v-if="$store.state.helper"/>
         
     </div>
 </template>

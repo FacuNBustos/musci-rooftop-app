@@ -9,7 +9,7 @@
 
             <div class="w-full border-b border-gray-200 mt-4 mb-4"></div>
 
-            <p class="text-center font-roboto">{{(this.$store.state.lyricLetter.lyrics) ? this.$store.state.lyricLetter.lyrics : 'No se a podido encontrar la letra.'}}</p>
+            <p class="text-center font-roboto">{{($store.state.lyricLetter.lyrics) ? $store.state.lyricLetter.lyrics : 'No se a podido encontrar la letra.'}}</p>
 
         </div>
     </div>

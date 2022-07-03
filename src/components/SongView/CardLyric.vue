@@ -15,7 +15,7 @@
         <div class="flex justify-end items-start w-[45%] h-full border-b-2">
             <button class="hover:bg-gray-200 rounded-xl
             active:bg-gray-300"
-            @click="this.handleSubmit()">
+            @click="handleSubmit()">
                 <img src="../../assets/lyrics_logo.svg" class="w-[25px] h-[25px] m-2"/>
             </button>
         </div>
